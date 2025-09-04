@@ -1,0 +1,10 @@
+body {
+  .el-input {
+    .el-input__inner {
+      @apply placeholder:italic;
+    }
+    .el-input-group__append {
+      @apply px-3;
+    }
+  }
+}

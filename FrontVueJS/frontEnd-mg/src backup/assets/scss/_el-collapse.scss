@@ -1,0 +1,31 @@
+.el-collapse.course-information-collapse {
+  .el-collapse-item {
+    border-left: 1px solid var(--el-collapse-border-color);
+    border-right: 1px solid var(--el-collapse-border-color);
+    &__header {
+      width: 100%;
+      padding: 0rem 1.6rem;
+
+      background-color: var(--el-color-info-light-9);
+      color: var(--el-text-color-primary);
+      font-size: var(--el-font-size-medium);
+      line-height: var(--el-font-line-height-primary);
+
+      white-space: normal;
+      font-weight: 600;
+      letter-spacing: -0.02rem;
+
+      .el-icon.el-collapse-item__arrow {
+        font-size: var(--el-font-size-medium);
+        font-weight: 600;
+        svg {
+          stroke: currentColor;
+          stroke-width: 2;
+        }
+      }
+    }
+    &__content {
+      padding: 0.8rem 1.6rem;
+    }
+  }
+}

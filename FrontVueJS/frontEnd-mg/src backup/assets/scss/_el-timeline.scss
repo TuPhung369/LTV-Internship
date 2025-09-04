@@ -1,0 +1,15 @@
+body {
+  .el-timeline {
+    --el-timeline-node-size-normal: 8px;
+    .el-timeline-item {
+      padding-bottom: 18px;
+    }
+
+    .el-timeline-item__node--normal {
+      @apply left-px;
+    }
+    .el-timeline-item__wrapper {
+      @apply pl-5;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.el-main {
+  --el-header-height: 6.625rem;
+  --el-footer-height: 20rem;
+  min-height: calc(100vh - var(--el-header-height) - var(--el-footer-height));
+  overflow-x: hidden;
+}

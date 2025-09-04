@@ -1,0 +1,16 @@
+body {
+  .el-form {
+    .el-form-item {
+      @apply flex-col sm:flex-row;
+      &.el-form-item--default {
+        @apply mb-1.5 sm:mb-5;
+      }
+      .el-form-item__label {
+        @apply justify-start;
+      }
+      .el-form-item__content {
+        @apply ml-0 #{!important};
+      }
+    }
+  }
+}

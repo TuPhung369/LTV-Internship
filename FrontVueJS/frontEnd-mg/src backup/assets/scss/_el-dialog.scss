@@ -1,0 +1,38 @@
+body {
+  .el-dialog {
+    &.no-padding {
+      --el-dialog-padding-primary: 0px;
+    }
+    header.el-dialog__header {
+      @apply transition-all duration-200;
+      --el-dialog-padding-primary: 15px 0 20px 0;
+      @media (max-width: 640px) {
+        --el-dialog-padding-primary: 30px;
+      }
+      @apply pb-2 sm:pb-5;
+      @apply text-center w-full;
+      @apply border-b border-solid border-b-[#e5e5e5];
+
+      span[role='heading'].el-dialog__title {
+        @apply font-bold text-primary text-2xl;
+        @apply p-0 pt-4 pb-5;
+      }
+      button.el-dialog__headerbtn {
+        i.el-icon.el-dialog__close {
+          @apply transition-colors duration-200 text-center leading-10 w-full h-full text-2xl sm:text-3xl text-[#b8b8b8];
+          svg {
+            @apply stroke-current stroke-[7.5rem] sm:stroke-[9rem] sm:mb-0.5;
+          }
+        }
+        &:hover {
+          i.el-icon.el-dialog__close {
+            @apply text-primary;
+          }
+        }
+      }
+    }
+    .el-dialog__body {
+      padding: var(--el-dialog-padding-primary);
+    }
+  }
+}

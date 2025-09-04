@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 4 102 175;
+    --color-warning: 255 165 1;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  @apply transition-opacity ease-in-out duration-200;
+}
+.fade-enter,
+.fade-leave-to {
+  @apply opacity-0;
+}
+
+.truncate-second {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+.zalo-chat-widget {
+  bottom: 90px !important;
+  width: 60px !important;
+  height: 60px !important;
+  right: 27px !important;
+}
+.zalo-chat-widget .logo {
+  width: 70px;
+  height: 61px;
+}
+.zalo-chat-widget .logo img {
+  height: 60px;
+  width: 92px;
+}
+
+.cover-img {
+  background-image: url(@/assets/images/bg_tab.png);
+  background-repeat: repeat-x;
+  background-color: rgba(4, 102, 175, 0.9);
+}
+
+.text-success {
+  color: var(--el-color-success);
+}
+
+.error-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--el-color-info-light-9);
+  color: var(--el-text-color-regular);
+  font-size: 14px;
+}
+
+.error-image-icon {
+  width: 32%;
+  height: 32%;
+  fill: var(--el-text-color-regular);
+}
+
+.error-image-message {
+  margin-bottom: 10px;
+}

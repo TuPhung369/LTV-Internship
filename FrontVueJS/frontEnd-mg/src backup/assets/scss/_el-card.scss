@@ -1,0 +1,5 @@
+.el-card {
+  &__body {
+    padding-bottom: calc(var(--el-card-padding) - var(--el-card-padding) / 2) !important;
+  }
+}

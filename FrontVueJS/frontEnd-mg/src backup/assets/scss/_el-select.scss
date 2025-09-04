@@ -1,0 +1,18 @@
+body {
+  .el-select {
+    .select-trigger {
+      .el-input__wrapper {
+        span.el-input__suffix {
+          i.el-icon.el-select__caret.el-select__icon {
+            @apply stroke-current stroke-[3rem];
+          }
+        }
+      }
+    }
+  }
+  .el-popper {
+    .el-select-dropdown {
+      @apply w-0 sm:w-auto;
+    }
+  }
+}
